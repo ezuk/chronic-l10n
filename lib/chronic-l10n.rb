@@ -13,6 +13,10 @@ module Chronic
 
     require './chronic-l10n/it_it'
     Chronic.add_locale :'it-IT', Chronic::L10n::IT_IT
+
+    require './chronic-l10n/de_de'
+    Chronic.add_locale :'de-DE', Chronic::L10n::DE_DE
+
     binding.pry
 
   end
