@@ -96,66 +96,66 @@ module Chronic
           ['novanta', 90]
         ],
         :big_prefixes => [
-          ['cento', 100],
-          ['mille', 1000],
-          ['milione', 1_000_000],
-          ['miliardo', 1_000_000_000],
-          ['triliardo', 1_000_000_000_000],
+          ['hund', 100],
+          ['tausend', 1000],
+          ['million', 1_000_000],
+          ['milliarde', 1_000_000_000],
+          ['billion', 1_000_000_000_000],
         ],
       },
 
       :repeater => {
         :season_names => {
-          /^primaver[ae]$/ => :spring,
-          /^estat[ae]$/ => :summer,
-          /^autun[oi]$/ => :autumn,
-          /^invern[oi]$/ => :winter
+          /^Frühling$/ => :spring,
+          /^Sommer$/ => :summer,
+          /^Herbst$/ => :autumn,
+          /^Winter$/ => :winter
         },
         :month_names => {
-          /^gen\.?(naio)?$/ => :january,
-          /^feb\.?(braio)?$/ => :february,
-          /^mar\.?(zo)?$/ => :march,
-          /^apr\.?(ile)?$/ => :april,
-          /^mag\.?(gio)?$/ => :may,
-          /^giu\.?(gno)?$/ => :june,
-          /^lug\.?(lio)?$/ => :july,
-          /^ago\.?(sto)?$/ => :august,
-          /^set\.?(tembre)?$/ => :september,
-          /^ott\.?(obre)?$/ => :october,
-          /^nov\.?(embre)?$/ => :november,
-          /^dic\.?(embre)?$/ => :december
+          /^Jan\.?(uar)?$/ => :january,
+          /^Feb\.?(ruar)?$/ => :february,
+          /^Mär\.?(z)?$/ => :march,
+          /^Apr\.?(il)?$/ => :april,
+          /^Ma\.?(i)?$/ => :may,
+          /^Jun\.?(i)?$/ => :june,
+          /^Jul\.?(i)?$/ => :july,
+          /^Aug\.?(ust)?$/ => :august,
+          /^Sep\.?(tember)?$/ => :september,
+          /^Okt\.?(ober)?$/ => :october,
+          /^Nov\.?(ember)?$/ => :november,
+          /^Dez\.?(ember)?$/ => :december
         },
         :day_names => {
-          /^lun(edi)?$/ => :monday,
-          /^mar(tedi)?$/ => :tuesday,
-          /^mer(coledi)?$/ => :wednesday,
-          /^gio(vedi)?$/ => :thursday,
-          /^ven(erdi)?$/ => :friday,
-          /^sab(ato)?$/ => :saturday,
-          /^dom(enica)?$/ => :sunday
+          /^Mon(tag)?$/ => :monday,
+          /^Die(nstag)?$/ => :tuesday,
+          /^Mit(twoch)?$/ => :wednesday,
+          /^Do(nnerstag)?$/ => :thursday,
+          /^Fr(eitag)?$/ => :friday,
+          /^Sam(stag)?$/ => :saturday,
+          /^Son(ntag)?$/ => :sunday
         },
         :day_portions => {
           /^ams?$/ => :am,
           /^pms?$/ => :pm,
-          /^mattin[ae]$/ => :morning,
-          /^pomeriggio|(dopo pranzo)$/ => :afternoon,
-          /^sera|cena|tardi$/ => :evening,
-          /^notte|(dopo cena)$/ => :night
+          /^morgen$/ => :morning,
+          /^nachmittag$/ => :afternoon,
+          /^abend$/ => :evening,
+          /^nacht$/ => :night
         },
         :units => {
-          /^ann[oi]$/ => :year,
-          /^stagion[ei]$/ => :season,
-          /^mes[ei]$/ => :month,
-          /^settiman[ae]$/ => :week,
-          /^weekend|(fine settimana)$/ => :weekend,
-          /^(giorno)? feriale$/ => :weekday,
-          /^giorn[oi]$/ => :day,
-          /^hrs?$/ => :hour,
-          /^or[ae]$/ => :hour,
-          /^mins?$/ => :minute,
-          /^minut[oi]$/ => :minute,
-          /^secs?$/ => :second,
-          /^second[oi]$/ => :second
+          /^jahr$/ => :year,
+          /^saison$/ => :season,
+          /^monat$/ => :month,
+          /^woche$/ => :week,
+          /^wochenende$/ => :weekend,
+          /^wochentag$/ => :weekday,
+          /^tag$/ => :day,
+          /^uhr?$/ => :hour,
+          /^h$/ => :hour,
+          /^min?$/ => :minute,
+          /^minute[n]$/ => :minute,
+          /^sec?$/ => :second,
+          /^sekund[en]$/ => :second
         }
       },
 
